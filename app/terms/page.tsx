@@ -1,0 +1,111 @@
+import type { Metadata } from "next";
+import { LegalPage } from "../legal-pages";
+
+export const metadata: Metadata = {
+  title: "Terms of Use | DreamNorth",
+  description:
+    "DreamNorth terms of use for the AI dream journal app, subscriptions, AI features, user content, and acceptable use.",
+};
+
+const sections = [
+  {
+    title: "Acceptance",
+    body: [
+      "These Terms of Use govern your access to and use of DreamNorth, including the mobile apps, website, AI features, subscriptions, tokens, and related services. By using DreamNorth, you agree to these terms.",
+      "If you do not agree, do not use DreamNorth.",
+    ],
+  },
+  {
+    title: "Eligibility and accounts",
+    bullets: [
+      "You must be at least 13 years old to use DreamNorth, and older if required by the laws where you live.",
+      "You are responsible for the information you provide, your account credentials, and all activity under your account.",
+      "DreamNorth may support email sign-in, Google Sign-In, anonymous or guest sessions, and account linking. Some guest data may be deleted after inactivity.",
+      "You agree not to impersonate another person, access another user's account, or bypass security, entitlement, or purchase systems.",
+    ],
+  },
+  {
+    title: "Your content",
+    body: [
+      "You keep ownership of the dreams, notes, recordings, prompts, images, exports, and other content you create or submit to DreamNorth.",
+      "You grant DreamNorth a limited license to host, store, encrypt, process, transmit, display, reproduce, modify, and create outputs from your content only as needed to provide, secure, support, and improve the service and the features you choose to use.",
+    ],
+  },
+  {
+    title: "AI features",
+    bullets: [
+      "DreamNorth may use AI systems to interpret dreams, categorize entries, answer dream-related questions, generate titles, create images, transcribe audio, or provide reflective prompts.",
+      "AI outputs can be inaccurate, incomplete, unexpected, or emotionally sensitive. You are responsible for how you use or rely on them.",
+      "DreamNorth is not a medical device, therapist, crisis service, or mental health provider. AI reflections are for journaling, creativity, and personal insight, not diagnosis, treatment, emergency support, legal advice, financial advice, or professional counseling.",
+      "If you are in danger or experiencing a crisis, contact local emergency services or a qualified professional.",
+    ],
+  },
+  {
+    title: "Privacy, encryption, and third parties",
+    body: [
+      "DreamNorth encrypts saved dream text and uses security controls designed for private journaling. Some requested features require content to be processed by third-party services, such as cloud hosting, AI providers, transcription, image generation, purchases, ads, analytics, crash reporting, and authentication.",
+      "Our Privacy Policy explains what data is collected, how it is used, when it may be shared, and how to request deletion.",
+    ],
+  },
+  {
+    title: "Purchases, subscriptions, and tokens",
+    bullets: [
+      "Paid features may include subscriptions, premium access, token balances, AI credits, or other digital benefits.",
+      "Purchases are processed through Apple App Store, Google Play, RevenueCat, or related payment providers. Their purchase terms, cancellation rules, and refund policies apply.",
+      "Prices, trial terms, renewal periods, and available features may change where allowed by law. We will show purchase details before you buy.",
+      "Tokens, credits, or promotional balances may expire, be limited to your account, and may not be redeemable for cash unless required by law.",
+    ],
+  },
+  {
+    title: "Acceptable use",
+    bullets: [
+      "Do not use DreamNorth to violate laws, harm others, infringe rights, harass, exploit, or generate abusive, illegal, or harmful content.",
+      "Do not upload malware, attack the service, scrape at scale, reverse engineer protected parts of the app, or interfere with security or billing systems.",
+      "Do not submit content you do not have the right to use or ask DreamNorth to create content that violates another person's rights.",
+    ],
+  },
+  {
+    title: "App stores and platform terms",
+    body: [
+      "If you downloaded DreamNorth from Apple App Store or Google Play, the store's terms also apply. Apple and Google are not responsible for DreamNorth's content or support except as required by their applicable platform rules.",
+    ],
+  },
+  {
+    title: "Service changes and termination",
+    body: [
+      "We may update, suspend, limit, or discontinue parts of DreamNorth. We may suspend or terminate access if we believe you violated these terms, created risk, failed payment, or used the service in a harmful way.",
+      "You may stop using DreamNorth at any time and may request deletion of account data as described in the Privacy Policy.",
+    ],
+  },
+  {
+    title: "Disclaimers and limitation of liability",
+    body: [
+      "DreamNorth is provided as is and as available. To the fullest extent allowed by law, we disclaim warranties of merchantability, fitness for a particular purpose, non-infringement, uninterrupted availability, error-free operation, and accuracy of AI outputs.",
+      "To the fullest extent allowed by law, DreamNorth will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost profits, lost data, emotional distress, or reliance on AI outputs.",
+    ],
+  },
+  {
+    title: "Legal terms",
+    body: [
+      "These terms are governed by applicable United States law, without regard to conflict-of-law rules, unless the laws where you live require otherwise. If any part of these terms is unenforceable, the rest remains in effect.",
+      "These terms, together with the Privacy Policy and any purchase terms shown in the app, are the entire agreement between you and DreamNorth for the service.",
+    ],
+  },
+  {
+    title: "Changes",
+    body: [
+      "We may update these terms as the app changes. If changes are material, we will take reasonable steps to notify users. Your continued use of DreamNorth after changes become effective means you accept the updated terms.",
+    ],
+  },
+];
+
+export default function TermsPage() {
+  return (
+    <LegalPage
+      badge="Terms of Use"
+      title="Terms for using DreamNorth."
+      intro="These terms cover the AI journal, encrypted dream storage, subscriptions, tokens, generated outputs, and the responsibilities that keep the app safe."
+      sections={sections}
+    />
+  );
+}
