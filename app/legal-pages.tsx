@@ -26,6 +26,7 @@ export function LegalPage({ badge, title, intro, sections }: LegalPageProps) {
         <div>
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>
+          <Link href="/copyright">Copyright</Link>
           <Link href="/contact">Contact</Link>
         </div>
       </nav>

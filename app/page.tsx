@@ -345,6 +345,7 @@ export default function Home() {
               <h2>Legal</h2>
               <Link href="/privacy">Privacy Policy</Link>
               <Link href="/terms">Terms of Use</Link>
+              <Link href="/copyright">Copyright</Link>
               <Link href="/contact">Contact</Link>
             </nav>
           </div>
