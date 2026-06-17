@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { contactEmail, LegalPage } from "../legal-pages";
 
 export const metadata: Metadata = {
-  title: "Copyright | DreamNorth",
+  title: "Copyright",
   description:
     "DreamNorth copyright information, content ownership, permissions, and reporting instructions.",
+  alternates: {
+    canonical: "/copyright",
+  },
 };
 
 const sections = [

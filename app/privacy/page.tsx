@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { LegalPage } from "../legal-pages";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | DreamNorth",
+  title: "Privacy Policy",
   description:
     "DreamNorth privacy policy for the AI dream journal app, including encryption, AI processing, data sharing, deletion, purchases, ads, and analytics.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 const sections = [

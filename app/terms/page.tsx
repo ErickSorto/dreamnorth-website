@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { LegalPage } from "../legal-pages";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | DreamNorth",
+  title: "Terms of Use",
   description:
     "DreamNorth terms of use for the AI dream journal app, subscriptions, AI features, user content, and acceptable use.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 const sections = [

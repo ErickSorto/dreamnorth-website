@@ -16,21 +16,47 @@ const body = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dream-north.com"),
+  applicationName: "DreamNorth",
+  category: "AI dream journal app",
+  authors: [{ name: "DreamNorth" }],
+  creator: "DreamNorth",
+  publisher: "DreamNorth",
   title: {
-    default: "DreamNorth | AI Dream Journal",
+    default: "DreamNorth | AI Dream Journal App & AI Dream Tools",
     template: "%s | DreamNorth",
   },
   description:
-    "Remember, understand, and visualize your dreams with DreamNorth.",
+    "DreamNorth is an AI dream journal app with dream interpretation, symbol tracking, voice notes, and AI image tools for visualizing dream worlds.",
+  keywords: [
+    "dream journal app",
+    "AI dream journal",
+    "dream interpretation app",
+    "dream tracker",
+    "dream analysis",
+    "AI dream tools",
+    "lucid dream journal",
+    "dream visualization",
+  ],
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
     apple: "/icon.svg",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: "DreamNorth | AI Dream Journal",
+    title: "DreamNorth | AI Dream Journal App & AI Dream Tools",
     description:
-      "Remember, understand, and visualize your dreams with DreamNorth.",
+      "Record dreams, interpret symbols, track patterns, and generate AI dream worlds with DreamNorth.",
     url: "https://dream-north.com",
     siteName: "DreamNorth",
     images: [
@@ -46,9 +72,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DreamNorth | AI Dream Journal",
+    title: "DreamNorth | AI Dream Journal App",
     description:
-      "Remember, understand, and visualize your dreams with DreamNorth.",
+      "Record dreams, interpret symbols, track patterns, and generate AI dream worlds with DreamNorth.",
     images: ["/dreamnorth/social-preview.png"],
   },
 };

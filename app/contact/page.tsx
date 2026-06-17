@@ -3,9 +3,12 @@ import Link from "next/link";
 import { contactEmail } from "../legal-pages";
 
 export const metadata: Metadata = {
-  title: "Contact | DreamNorth",
+  title: "Contact",
   description:
     "Contact DreamNorth for app support, privacy questions, and data requests.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const mailto = `mailto:${contactEmail}?subject=DreamNorth%20Support`;
@@ -20,6 +23,7 @@ export default function ContactPage() {
         <div>
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>
+          <Link href="/copyright">Copyright</Link>
           <Link href="/contact">Contact</Link>
         </div>
       </nav>

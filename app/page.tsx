@@ -1,19 +1,55 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import DreamScene from "./DreamScene";
 import DreamWorldGenerator from "./DreamWorldGenerator";
 import LighthouseLight from "./LighthouseLight";
 import MobileDrawerDismiss from "./MobileDrawerDismiss";
 
+export const metadata: Metadata = {
+  title: "DreamNorth | AI Dream Journal App & AI Dream Tools",
+  description:
+    "DreamNorth is an AI dream journal app for recording dreams, interpreting symbols, tracking patterns, and visualizing dream worlds with AI tools.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 const videoUrl =
   "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "DreamNorth",
+  applicationCategory: "LifestyleApplication",
+  operatingSystem: "iOS, Android",
+  url: "https://dream-north.com",
+  image: "https://dream-north.com/dreamnorth/social-preview.png",
+  description:
+    "DreamNorth is an AI dream journal app with dream interpretation, symbol tracking, voice notes, and AI image tools for visualizing dream worlds.",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  featureList: [
+    "Dream journal entries",
+    "AI dream interpretation",
+    "Dream symbol tracking",
+    "Voice note transcription",
+    "AI dream image generation",
+    "Dream world visualization",
+  ],
+};
 
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "Journal", href: "#journal" },
   { label: "Worlds", href: "#worlds" },
-  { label: "Science", href: "#science" },
+  { label: "AI Tools", href: "#science" },
   { label: "Reach Us", href: "#reach-us" },
 ];
 
@@ -24,11 +60,11 @@ const dreamTools = [
   },
   {
     title: "Understand",
-    text: "Trace symbols, moods, people, and recurring threads.",
+    text: "Use AI dream interpretation to trace symbols, moods, people, and recurring threads.",
   },
   {
     title: "Visualize",
-    text: "Turn entries into surreal dream worlds with AI art.",
+    text: "Turn entries into surreal dream worlds with AI image generation tools.",
   },
 ];
 
@@ -93,6 +129,10 @@ function StoreButtons() {
 export default function Home() {
   return (
     <main className="dream-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <header className="dream-site-header">
         <MobileDrawerDismiss />
         <div className="dream-top-bar">
@@ -100,7 +140,7 @@ export default function Home() {
           <a href="#reach-us">
             Download the official app <span aria-hidden="true">-&gt;</span>
           </a>
-          <span>AI recall / image worlds</span>
+          <span>AI dream tools</span>
         </div>
 
         <input
@@ -204,8 +244,9 @@ export default function Home() {
             <span className="dream-line">beneath them.</span>
           </h1>
           <p className="dream-subtitle animate-fade-rise-delay">
-            DreamNorth helps you record, understand, and visualize the midnight
-            stories your waking mind keeps trying to forget.
+            DreamNorth is an AI dream journal app for recording dreams,
+            interpreting symbols, tracking patterns, and visualizing the
+            midnight stories your waking mind keeps trying to forget.
           </p>
           <div className="dream-actions animate-fade-rise-delay-2">
             <StoreButtons />
@@ -225,8 +266,8 @@ export default function Home() {
           <h2>Wake up with the dream still glowing.</h2>
           <p>
             The app is designed for the first fragile minute after sleep:
-            fast capture, emotional tagging, and a visual engine that turns
-            memory into an artifact you can return to.
+            fast dream capture, emotional tagging, AI interpretation, and a
+            visual engine that turns memory into an artifact you can return to.
           </p>
         </div>
 
@@ -273,7 +314,8 @@ export default function Home() {
           <h2>From half-remembered scenes to cinematic inner maps.</h2>
           <p>
             DreamNorth uses your language as a compass, preserving tone and
-            symbols while giving each entry a vivid visual form.
+            symbols while AI image tools give each dream journal entry a vivid
+            visual form.
           </p>
           <a href="#reach-us" className="dream-inline-link">
             Download DreamNorth
@@ -302,11 +344,11 @@ export default function Home() {
         />
         <div className="dream-signal-copy scroll-reveal">
           <p className="dream-kicker">Built for recall</p>
-          <h2>Less noise. More signal from the night.</h2>
+          <h2>AI tools for dream recall, symbols, and visual worlds.</h2>
           <p>
-            A focused journal, symbol tracking, and AI visualization come
-            together in one calm surface for people who take their inner life
-            seriously.
+            A focused dream journal app, symbol tracking, AI interpretation,
+            voice notes, and dream visualization come together in one calm
+            surface for people who take their inner life seriously.
           </p>
         </div>
       </section>
