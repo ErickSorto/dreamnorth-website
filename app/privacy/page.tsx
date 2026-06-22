@@ -21,7 +21,7 @@ const sections = [
   {
     title: "Information we collect",
     bullets: [
-      "Account information, such as email address, display name, sign-in provider, verification status, and user ID.",
+      "Account information needed for login, such as name, email address, display name, user ID, sign-in provider, verification status, and related authentication identifiers.",
       "Dream journal content that you choose to save, including dream text, titles, moods, tags, interpretation results, generated images, and related metadata.",
       "Optional voice content when you use audio recording or transcription, including audio files, audio duration, timestamps, and generated transcripts.",
       "Purchase and entitlement information, such as subscription status, token balances, product identifiers, and purchase verification data.",
@@ -33,7 +33,7 @@ const sections = [
   {
     title: "How we use information",
     bullets: [
-      "To create and manage accounts, including email sign-in, Google Sign-In, anonymous/guest sessions, account linking, and verification.",
+      "To create and manage accounts, including email sign-in, Google Sign-In, Sign in with Apple, anonymous/guest sessions, account linking, and verification.",
       "To save, sync, display, export, and delete your dream journal entries across your devices.",
       "To provide AI features, including dream interpretation, categorization, Q&A, transcription, titles, summaries, advice-style reflections, and image generation.",
       "To provide subscriptions, token balances, restore purchases, and premium access.",
@@ -51,7 +51,7 @@ const sections = [
   {
     title: "AI and third-party processing",
     body: [
-      "DreamNorth uses service providers to run core features. These may include Firebase and Google Cloud for authentication, database, storage, cloud functions, crash reporting, and notifications; Google Sign-In for authentication; Google Gemini and OpenAI for AI analysis, transcription, and generation; RevenueCat and the app stores for purchases and subscriptions; Google AdMob for ads where enabled; and email providers for account or support messages.",
+      "DreamNorth uses service providers to run core features. These may include Firebase and Google Cloud for authentication, database, storage, cloud functions, crash reporting, and notifications; Google Sign-In for authentication; Apple, AuthenticationServices, and Sign in with Apple for iOS authentication; Google Gemini and OpenAI for AI analysis, transcription, and generation; RevenueCat and the app stores for purchases and subscriptions; Google AdMob for ads where enabled; and email providers for account or support messages.",
       "We do not sell your personal information or dream content. These providers may process data on our behalf or under their own terms and privacy policies. Their systems may receive the information needed to provide the feature you requested.",
     ],
   },

@@ -23,7 +23,7 @@ const sections = [
     bullets: [
       "You must be at least 13 years old to use DreamNorth, and older if required by the laws where you live.",
       "You are responsible for the information you provide, your account credentials, and all activity under your account.",
-      "DreamNorth may support email sign-in, Google Sign-In, anonymous or guest sessions, and account linking. Some guest data may be deleted after inactivity.",
+      "DreamNorth may support email sign-in, Google Sign-In, Sign in with Apple, anonymous or guest sessions, and account linking. Some guest data may be deleted after inactivity.",
       "You agree not to impersonate another person, access another user's account, or bypass security, entitlement, or purchase systems.",
     ],
   },
