@@ -13,7 +13,7 @@ type LegalPageProps = {
   sections: LegalSection[];
 };
 
-export const effectiveDate = "June 22, 2026";
+export const effectiveDate = "June 23, 2026";
 export const contactEmail = "sortoerick33@gmail.com";
 
 export function LegalPage({ badge, title, intro, sections }: LegalPageProps) {
